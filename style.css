@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif; 
+  /* eğer tarayıcı bir yazı tipini desteklemiyorsa diğerine geçer */
+  background-color: #f0f0f0;
+  /* arkaplan rengi */
+  display: flex;
+  /* body'de bulunan kutuları esnek hale getirir */
+  justify-content: center;
+  /* elemanları yatay eksende ortalar */
+  align-items: center;
+  /* elemanları dikey eksende ortalar */
+  height: 100vh;
+  /* tarayıcının boyutu ile orantılı olması açısından vh kullandık, farklı cihazlarda kullanımda sıkıntı cıkarmaması için */
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  /* container'ın çizgisi ile içindeki elementlerin arasındaki boşluk */
+  border-radius: 15px;
+  /* sınır çizgi çapı */
+  width: 300px;
+  /* container'ın genişliği */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* dikey,yatay,gölge dağılımı, renk ve saydamlık */
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  /* element'in dışındaki elementlerle olan boşluğu */
+  color: #3498db;
+  /* renk */
+  text-align: center;
+  /* yazının ortalanması */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: calc(100% - 20px);
+  /* calc fonksiyonu içinde bulunduğu div'in tamamından 20 pixel küçük olmasını belirtiyor bulunduğu  */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  /* imleç seçimi */
+  font-size: 16px;
+  /* yazı tipi boyu */
+}
+
+button:hover {
+  background-color: #2980b9;
+  /* mouse butonun üstüne geldiğinde butonun rengini değiştirme */
+}
